@@ -21,6 +21,9 @@
               tor-browser # .onionドメインのダークウェブにアクセスする
               ffmpeg-full # 動画をばらしてフレームに分解する
               libreoffice-qt # PDFの解析をする
+
+              pkgs.python313
+              pkgs.uv
             ];
           };
         };
