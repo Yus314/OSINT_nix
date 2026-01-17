@@ -1,3 +1,4 @@
+# This is a flake for OSINT CTF.
 {
   description = "for OCINT CTF Flake";
   inputs = {
@@ -16,10 +17,10 @@
         {
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
-              exiftool
-              tor-browser
-              ffmpeg-full
-              libreoffice-qt
+              exiftool # 画像のメタデータを見る
+              tor-browser # .onionドメインのダークウェブにアクセスする
+              ffmpeg-full # 動画をばらしてフレームに分解する
+              libreoffice-qt # PDFの解析をする
             ];
           };
         };
